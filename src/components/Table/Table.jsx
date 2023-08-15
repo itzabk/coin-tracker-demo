@@ -57,8 +57,8 @@ const CryptoTable = () => {
   const handleSearch = () => {
     return coins.filter(
       (coin) =>
-        coin.name.toLowerCase().includes(search) ||
-        coin.symbol.toLowerCase().includes(search)
+        coin.name.toLowerCase().includes(search.toLowerCase()) ||
+        coin.symbol.toLowerCase().includes(search.toLowerCase())
     );
   };
 
@@ -104,12 +104,14 @@ const CryptoTable = () => {
 
         <TextField
           label="Search"
-          variant="outlined"
+          variant="filled"
+          color="success"
+          focused
           sx={{
             width: "100%",
             fontWeight: "700",
             fontFamily: "monospace",
-            backgroundColor: "lightgray",
+            backgroundColor: "darkgrey",
             borderRadius: "1rem",
             overflow: "hidden",
           }}
