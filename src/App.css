@@ -1,0 +1,7 @@
+.app {
+  min-height: 100vh;
+  background-image: linear-gradient(to right, rgb(22, 1, 28), rgba(108, 17, 124, 0.838));
+  color: white;
+  filter: "blur(8px)";
+}
+
